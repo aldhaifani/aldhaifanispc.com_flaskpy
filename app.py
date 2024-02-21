@@ -13,5 +13,5 @@ def app(environ, start_response):
         ["%s==%s" % (i.key, i.version) for i in installed_packages]
     )
     version = "Python v" + sys.version.split()[0] + "\n"
-    response = "\n".join([str(installed_packages), version])
+    response = "\n".join([str(installed_packages_list), version])
     return [response.encode()]
