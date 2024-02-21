@@ -5,5 +5,5 @@ views = Blueprint("views", __name__)
 
 
 @views.route("/")
-def favicon():
+def home():
     return "Hello World"
